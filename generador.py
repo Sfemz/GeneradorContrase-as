@@ -8,7 +8,14 @@ while True:
 
     base = minusculas + mayusculas + numeros + simbolos
 
-    longitud = int(input("¿Cuantos caracteres quieres? (Máximo 89): "))
+    longitud = int(input("""
+______________________________________________ 
+|                                             |
+| ¿Cuantos caracteres quieres? (Máximo 89):   |
+|_____________________________________________|
+                         
+ESCRIBE UN NÚMERO: """))
     muestra = random.sample(base,  longitud,)
+
     contraseña = "".join(muestra)
     print(contraseña)
